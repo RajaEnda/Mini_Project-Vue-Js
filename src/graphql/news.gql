@@ -1,5 +1,5 @@
-query MyQuery {
-  News_berita {
+query MyQuery($id: Int!) {
+  News_berita_by_pk(id: $id) {
     id
     id_berita
     deskripsi

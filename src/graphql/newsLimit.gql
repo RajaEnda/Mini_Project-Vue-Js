@@ -1,5 +1,6 @@
 query MyQuery {
   News_berita(limit: 4) {
+    id
     image_path
     judul
     kategori
