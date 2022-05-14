@@ -1,11 +1,11 @@
 query MyQuery {
   News_berita {
+    id
+    id_berita
     deskripsi
     image_path
-    id_berita
-    id
-    judul
+    like
     kategori
+    judul
   }
 }
-

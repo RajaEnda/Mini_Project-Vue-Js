@@ -1,6 +1,7 @@
 <template>
+  <v-container>
 
-  <div class="body">
+    <div class="body" style="margin-top:50px;">
    <ApolloQuery :query="require('../graphql/news.gql')">
       <template v-slot="{ result: { loading, error, data } }">
         <!-- Loading -->
@@ -23,7 +24,9 @@
                 <v-card-actions>
               
 
-
+                  <v-text>
+                    Disukai oleh {{news.like}} orang
+                  </v-text>
 
                  
                 </v-card-actions>
@@ -37,6 +40,7 @@
       </template>
     </ApolloQuery>
   </div>
+  </v-container>
   </template>
   
 <script>

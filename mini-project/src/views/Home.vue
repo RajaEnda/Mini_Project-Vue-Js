@@ -1,22 +1,23 @@
 <template>
 
   <v-app style="background-color:#F0FFF0; margin-bottom: 250px; margin-top:100px;">
+<v-container>
 
-      <div class="head">
-        <h2 style="margin-left:100px; color: white;">DUNIA HARUS TAHU DAN KAMU JUGA!</h2>
+  <div class="head">
+    <h2 style="margin-left:100px; color: white;">DUNIA HARUS TAHU DAN KAMU JUGA!</h2>
         <br/>
         <br/>
         <h3 style="margin-left:100px; color: white;">Baca Sekarang Disini</h3>
         <br/>
         <br/>
-        <v-btn style="Background-color:white; border-radius:50px; margin-left: 100px;">Read Now</v-btn>
+        <v-btn @click=" ()=> redirectToPage('/list')" style="Background-color:white; border-radius:50px; margin-left: 100px;">Show More</v-btn>
         
     </div>
       
-    <div style="padding-top:100px; background-color:#F0FFF0; height: 500px;">
+    <div style="padding-top:100px; margin-left: 0px; background-color:#F0FFF0; height: 500px;">
         <v-row style="margin-bottom:100px;">
 
-          <v-col cols="12" class="d-flex justify-center">
+          
           
            <ApolloQuery :query="require('../graphql/newsLimit.gql')">
       <template v-slot="{ result: { loading, error, data } }">
@@ -57,10 +58,11 @@
         <div v-else class="no-result apollo">No result :(</div>
       </template>
     </ApolloQuery>
-        </v-col>
+        
         </v-row>
         </div>
 
+        </v-container>
   </v-app>
          
 </template>
@@ -79,6 +81,9 @@ export default {
     
   },
   methods: {
+       redirectToPage(){
+        this.$router.push('/list')
+        },
   },
    mounted(){
 
@@ -89,11 +94,11 @@ export default {
 
 <style>
 .head{
-  background-image: url(https://i.postimg.cc/NF48YZRh/images.jpg);
+  background-image: url(https://i.postimg.cc/7Zpw0X8z/images-5.jpg);
   background-size: auto, auto;
   background-position:  right center;
   background-repeat: no-repeat;
-  background-size: 700px, 300px ;
+  background-size: 600px, 300px ;
   background-color:#98FB98  ;
   height: 400px;
   width: 1150px;

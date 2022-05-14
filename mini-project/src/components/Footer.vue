@@ -1,5 +1,5 @@
 <template>
-    <v-footer style="background-color:#808080; color:white;">
+    <v-footer style="background-color:#808080; color:white; margin-bottom: 50px;">
         <v-col cols="2"></v-col>
   <v-col cols="3">
     <h4>Sumatera Utara, Rantauprapat</h4>
@@ -26,6 +26,7 @@
           </ul>
         </v-btn>
   </v-col>
+  <h4 style="margin-left:500px;">Copyright 2022 By Raja Enda Ritonga</h4>
 </v-footer>            
 </template>
 
