@@ -4,7 +4,7 @@
   >
     <v-container style="background-color:#F0FFF0;">
       <div class="head">
-        <h2 style="margin-left: 100px; color: white">
+        <h2 style="color: white">
           DUNIA HARUS TAHU DAN KAMU JUGA!
         </h2>
         <br />
