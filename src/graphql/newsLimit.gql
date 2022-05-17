@@ -1,5 +1,5 @@
 query MyQuery {
-  News_berita(limit: 4) {
+  News_berita(limit: 3) {
     id
     image_path
     judul
