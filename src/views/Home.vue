@@ -31,6 +31,8 @@
           height: 500px;
         "
       >
+
+      <h2>Berita Terpopuler</h2>
         <v-row style="margin-bottom: 100px">
           <ApolloQuery :query="require('../graphql/newsLimit.gql')">
             <template v-slot="{ result: { loading, error, data } }">
@@ -55,7 +57,7 @@
                       class="mx-auto my-12"
                       height="480"
                     >
-                      <v-img height="300" :src="news.image_path"></v-img>
+                      <v-img height="250" :src="news.image_path"></v-img>
 
                       <v-card-title>
                         <router-link :to="`/detail/${news.id}`">{{
@@ -63,9 +65,7 @@
                         }}</router-link>
                       </v-card-title>
 
-                      <v-text>
-                        {{ news.kategori }}
-                      </v-text>
+                      
 
                       <v-card-actions> </v-card-actions>
                     </v-card>

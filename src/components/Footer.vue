@@ -28,7 +28,7 @@
         </ul>
       </v-btn>
     </v-col>
-    <h4 style="margin-left: 500px">Copyright 2022 By Raja Enda Ritonga</h4>
+    <h4 style="margin-left: 400px">Copyright 2022 By Raja Enda Ritonga</h4>
   </v-footer>
 </template>
 

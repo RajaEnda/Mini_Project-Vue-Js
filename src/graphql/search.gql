@@ -1,0 +1,11 @@
+query MyQuery {
+  News_berita(where: {judul: {_iregex: ""}}) {
+    deskripsi
+    id
+    id_berita
+    image_path
+    judul
+    kategori
+    like
+  }
+}
