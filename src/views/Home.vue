@@ -107,10 +107,10 @@ export default {
   background-size: auto, auto;
   background-position: right center;
   background-repeat: no-repeat;
-  background-size: 600px, 300px;
+  background-size: 500px, 300px;
   background-color: #98fb98;
   height: 400px;
-  width: 1150px;
+  width: 800px;
   padding-top: 100px;
 }
 </style>
