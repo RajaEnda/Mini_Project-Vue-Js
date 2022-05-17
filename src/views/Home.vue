@@ -47,6 +47,7 @@
               <!-- Result -->
               <div v-else-if="data" class="result apollo">
                 <v-row>
+                  <v-col cols="1"></v-col>
                   <v-col
                     cols="3"
                     v-for="news in data.News_berita"
@@ -56,6 +57,7 @@
                       :loading="loading"
                       class="mx-auto my-12"
                       height="480"
+                      width="550"
                     >
                       <v-img height="250" :src="news.image_path"></v-img>
 
@@ -110,7 +112,7 @@ export default {
   background-size: 500px, 300px;
   background-color: #98fb98;
   height: 400px;
-  width: 800px;
+  width: 850px;
   padding-top: 100px;
 }
 </style>
