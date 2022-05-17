@@ -1,8 +1,8 @@
 <template>
   <v-app
-    style="background-color: #f0fff0; margin-bottom: 250px; margin-top: 100px"
+    style="background-color: #F0FFF0; margin-bottom: 250px; margin-top: 100px"
   >
-    <v-container>
+    <v-container style="background-color:#F0FFF0;">
       <div class="head">
         <h2 style="margin-left: 100px; color: white">
           DUNIA HARUS TAHU DAN KAMU JUGA!

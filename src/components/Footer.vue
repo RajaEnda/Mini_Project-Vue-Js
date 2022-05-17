@@ -2,9 +2,11 @@
   <v-footer
     style="background-color: #808080; color: white; margin-bottom: 50px"
   >
-    <v-col cols="2"></v-col>
+      <v-row>
+
+    <v-col cols="1"></v-col>
     <v-col cols="3">
-      <h4>Sumatera Utara, Rantauprapat</h4>
+      <h4 style="margin-top:70px;">Sumatera Utara, Rantauprapat</h4>
     </v-col>
     <v-col cols="3">
       <h4 style="margin-top: 10px">Explore</h4>
@@ -17,8 +19,7 @@
       </ul>
     </v-col>
     <v-col cols="3">
-      <h4>Found Us Here</h4>
-      <br />
+      <h4 style="margin-bottom:20px;">Found Us Here</h4>
       <v-btn icon style="margin-top: 20px; margin-bottom: 30px">
         <ul>
           <li><v-icon>mdi-facebook</v-icon> Raja Enda Ritonga</li>
@@ -29,6 +30,7 @@
       </v-btn>
     </v-col>
     <h4 style="margin-left: 400px">Copyright 2022 By Raja Enda Ritonga</h4>
+      </v-row>
   </v-footer>
 </template>
 
