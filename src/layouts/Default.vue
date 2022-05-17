@@ -1,8 +1,12 @@
 <template>
 <v-app style="background-color:#F0FFF0;">
 <Navbar />
+<v-container>
+    
+    <router-view />
 
-<router-view />
+</v-container>
+
 
 <Footer />    
 </v-app>
