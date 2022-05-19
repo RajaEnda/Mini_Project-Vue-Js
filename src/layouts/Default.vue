@@ -1,7 +1,7 @@
 <template>
 <v-app style="background-color:#F0FFF0;">
 <Navbar />
-<v-container>
+<v-container style="margin-bottom:50px;">
     
     <router-view />
 

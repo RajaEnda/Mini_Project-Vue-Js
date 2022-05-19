@@ -1,0 +1,11 @@
+query MyQuery {
+  News_Kategori_by_pk(name: "Ekonomi") {
+    berita {
+      kategori
+      image_path
+      judul
+      like
+      id
+    }
+  }
+}

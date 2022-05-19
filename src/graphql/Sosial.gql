@@ -1,0 +1,11 @@
+query MyQuery {
+  News_Kategori_by_pk(name: "Sosial") {
+    berita {
+      kategori
+      image_path
+      judul
+      like
+      id
+    }
+  }
+}
